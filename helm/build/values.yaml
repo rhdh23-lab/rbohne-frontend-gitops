@@ -1,0 +1,15 @@
+app:
+  name: rbohne-poi-map-app
+  namespace: rbohne
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/rbohne-frontend
+  org: rhdh23-lab
+  name: rbohne-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rbohne/poi-map-app
+  tag: latest
